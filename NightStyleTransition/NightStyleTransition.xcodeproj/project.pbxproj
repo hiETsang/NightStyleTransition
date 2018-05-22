@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71FC036420B41F1E00CC5A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC036320B41F1E00CC5A02 /* AppDelegate.swift */; };
+		71FC036620B41F1E00CC5A02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC036520B41F1E00CC5A02 /* ViewController.swift */; };
+		71FC036920B41F1E00CC5A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FC036720B41F1E00CC5A02 /* Main.storyboard */; };
+		71FC036B20B41F2000CC5A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71FC036A20B41F2000CC5A02 /* Assets.xcassets */; };
+		71FC036E20B41F2000CC5A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FC036C20B41F2000CC5A02 /* LaunchScreen.storyboard */; };
+		71FC039720B4289C00CC5A02 /* MixedResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC037620B4289B00CC5A02 /* MixedResource.swift */; };
+		71FC039820B4289C00CC5A02 /* UINavigationBar+MixedBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC037720B4289B00CC5A02 /* UINavigationBar+MixedBarStyle.swift */; };
+		71FC039920B4289C00CC5A02 /* UIImageView+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC037820B4289B00CC5A02 /* UIImageView+Mixed.swift */; };
+		71FC039A20B4289C00CC5A02 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC037920B4289B00CC5A02 /* Keys.swift */; };
+		71FC039B20B4289C00CC5A02 /* NSObject+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC037A20B4289B00CC5A02 /* NSObject+Mixed.swift */; };
+		71FC039C20B4289C00CC5A02 /* CALayer+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC037B20B4289B00CC5A02 /* CALayer+Mixed.swift */; };
+		71FC039D20B4289C00CC5A02 /* UISwitch+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC037D20B4289B00CC5A02 /* UISwitch+Mixed.swift */; };
+		71FC039E20B4289C00CC5A02 /* UIProgressView+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC037E20B4289B00CC5A02 /* UIProgressView+Mixed.swift */; };
+		71FC039F20B4289C00CC5A02 /* UITextView+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC037F20B4289B00CC5A02 /* UITextView+Mixed.swift */; };
+		71FC03A020B4289C00CC5A02 /* UIToolbar+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038020B4289B00CC5A02 /* UIToolbar+Mixed.swift */; };
+		71FC03A120B4289C00CC5A02 /* UIView+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038120B4289B00CC5A02 /* UIView+Mixed.swift */; };
+		71FC03A220B4289C00CC5A02 /* UIBarButtonItem+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038220B4289B00CC5A02 /* UIBarButtonItem+Mixed.swift */; };
+		71FC03A320B4289C00CC5A02 /* UILabel+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038320B4289B00CC5A02 /* UILabel+Mixed.swift */; };
+		71FC03A420B4289C00CC5A02 /* UISlider+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038420B4289B00CC5A02 /* UISlider+Mixed.swift */; };
+		71FC03A520B4289C00CC5A02 /* UITextField+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038520B4289B00CC5A02 /* UITextField+Mixed.swift */; };
+		71FC03A620B4289C00CC5A02 /* UIPopoverPresentationController+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038620B4289B00CC5A02 /* UIPopoverPresentationController+Mixed.swift */; };
+		71FC03A720B4289C00CC5A02 /* UISearchBar+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038720B4289B00CC5A02 /* UISearchBar+Mixed.swift */; };
+		71FC03A820B4289C00CC5A02 /* UIPageControl+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038820B4289B00CC5A02 /* UIPageControl+Mixed.swift */; };
+		71FC03A920B4289C00CC5A02 /* UITableView+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038920B4289B00CC5A02 /* UITableView+Mixed.swift */; };
+		71FC03AA20B4289C00CC5A02 /* UINavigationBar+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038A20B4289B00CC5A02 /* UINavigationBar+Mixed.swift */; };
+		71FC03AB20B4289C00CC5A02 /* UITabBar+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038B20B4289B00CC5A02 /* UITabBar+Mixed.swift */; };
+		71FC03AC20B4289C00CC5A02 /* NSObject+Customize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038C20B4289B00CC5A02 /* NSObject+Customize.swift */; };
+		71FC03AD20B4289C00CC5A02 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 71FC038D20B4289B00CC5A02 /* .gitkeep */; };
+		71FC03AE20B4289C00CC5A02 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038E20B4289B00CC5A02 /* NotificationManager.swift */; };
+		71FC03AF20B4289C00CC5A02 /* NNMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC038F20B4289B00CC5A02 /* NNMutableAttributedString.swift */; };
+		71FC03B020B4289C00CC5A02 /* UIButton+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC039020B4289B00CC5A02 /* UIButton+Mixed.swift */; };
+		71FC03B120B4289C00CC5A02 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC039120B4289B00CC5A02 /* UIColor+RGB.swift */; };
+		71FC03B220B4289C00CC5A02 /* NightNight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC039220B4289B00CC5A02 /* NightNight.swift */; };
+		71FC03B320B4289C00CC5A02 /* UINavigationBar+MixedTitleTextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC039320B4289B00CC5A02 /* UINavigationBar+MixedTitleTextAttributes.swift */; };
+		71FC03B420B4289C00CC5A02 /* AttributeNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC039420B4289B00CC5A02 /* AttributeNames.swift */; };
+		71FC03B520B4289C00CC5A02 /* Dictionary+AttributedStringKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC039520B4289B00CC5A02 /* Dictionary+AttributedStringKeys.swift */; };
+		71FC03B620B4289C00CC5A02 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC039620B4289B00CC5A02 /* UIView+IBInspectable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		71FC036020B41F1E00CC5A02 /* NightStyleTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightStyleTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71FC036320B41F1E00CC5A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71FC036520B41F1E00CC5A02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71FC036820B41F1E00CC5A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71FC036A20B41F2000CC5A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71FC036D20B41F2000CC5A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71FC036F20B41F2000CC5A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71FC037620B4289B00CC5A02 /* MixedResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedResource.swift; sourceTree = "<group>"; };
+		71FC037720B4289B00CC5A02 /* UINavigationBar+MixedBarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+MixedBarStyle.swift"; sourceTree = "<group>"; };
+		71FC037820B4289B00CC5A02 /* UIImageView+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Mixed.swift"; sourceTree = "<group>"; };
+		71FC037920B4289B00CC5A02 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		71FC037A20B4289B00CC5A02 /* NSObject+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Mixed.swift"; sourceTree = "<group>"; };
+		71FC037B20B4289B00CC5A02 /* CALayer+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Mixed.swift"; sourceTree = "<group>"; };
+		71FC037D20B4289B00CC5A02 /* UISwitch+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+Mixed.swift"; sourceTree = "<group>"; };
+		71FC037E20B4289B00CC5A02 /* UIProgressView+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIProgressView+Mixed.swift"; sourceTree = "<group>"; };
+		71FC037F20B4289B00CC5A02 /* UITextView+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Mixed.swift"; sourceTree = "<group>"; };
+		71FC038020B4289B00CC5A02 /* UIToolbar+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIToolbar+Mixed.swift"; sourceTree = "<group>"; };
+		71FC038120B4289B00CC5A02 /* UIView+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Mixed.swift"; sourceTree = "<group>"; };
+		71FC038220B4289B00CC5A02 /* UIBarButtonItem+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Mixed.swift"; sourceTree = "<group>"; };
+		71FC038320B4289B00CC5A02 /* UILabel+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Mixed.swift"; sourceTree = "<group>"; };
+		71FC038420B4289B00CC5A02 /* UISlider+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+Mixed.swift"; sourceTree = "<group>"; };
+		71FC038520B4289B00CC5A02 /* UITextField+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Mixed.swift"; sourceTree = "<group>"; };
+		71FC038620B4289B00CC5A02 /* UIPopoverPresentationController+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPopoverPresentationController+Mixed.swift"; sourceTree = "<group>"; };
+		71FC038720B4289B00CC5A02 /* UISearchBar+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Mixed.swift"; sourceTree = "<group>"; };
+		71FC038820B4289B00CC5A02 /* UIPageControl+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Mixed.swift"; sourceTree = "<group>"; };
+		71FC038920B4289B00CC5A02 /* UITableView+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Mixed.swift"; sourceTree = "<group>"; };
+		71FC038A20B4289B00CC5A02 /* UINavigationBar+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Mixed.swift"; sourceTree = "<group>"; };
+		71FC038B20B4289B00CC5A02 /* UITabBar+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar+Mixed.swift"; sourceTree = "<group>"; };
+		71FC038C20B4289B00CC5A02 /* NSObject+Customize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Customize.swift"; sourceTree = "<group>"; };
+		71FC038D20B4289B00CC5A02 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		71FC038E20B4289B00CC5A02 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		71FC038F20B4289B00CC5A02 /* NNMutableAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNMutableAttributedString.swift; sourceTree = "<group>"; };
+		71FC039020B4289B00CC5A02 /* UIButton+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Mixed.swift"; sourceTree = "<group>"; };
+		71FC039120B4289B00CC5A02 /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		71FC039220B4289B00CC5A02 /* NightNight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightNight.swift; sourceTree = "<group>"; };
+		71FC039320B4289B00CC5A02 /* UINavigationBar+MixedTitleTextAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+MixedTitleTextAttributes.swift"; sourceTree = "<group>"; };
+		71FC039420B4289B00CC5A02 /* AttributeNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeNames.swift; sourceTree = "<group>"; };
+		71FC039520B4289B00CC5A02 /* Dictionary+AttributedStringKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+AttributedStringKeys.swift"; sourceTree = "<group>"; };
+		71FC039620B4289B00CC5A02 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71FC035D20B41F1E00CC5A02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71FC035720B41F1E00CC5A02 = {
+			isa = PBXGroup;
+			children = (
+				71FC037520B4289B00CC5A02 /* NightNight */,
+				71FC036220B41F1E00CC5A02 /* NightStyleTransition */,
+				71FC036120B41F1E00CC5A02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71FC036120B41F1E00CC5A02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71FC036020B41F1E00CC5A02 /* NightStyleTransition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71FC036220B41F1E00CC5A02 /* NightStyleTransition */ = {
+			isa = PBXGroup;
+			children = (
+				71FC036320B41F1E00CC5A02 /* AppDelegate.swift */,
+				71FC036520B41F1E00CC5A02 /* ViewController.swift */,
+				71FC036720B41F1E00CC5A02 /* Main.storyboard */,
+				71FC036A20B41F2000CC5A02 /* Assets.xcassets */,
+				71FC036C20B41F2000CC5A02 /* LaunchScreen.storyboard */,
+				71FC036F20B41F2000CC5A02 /* Info.plist */,
+			);
+			path = NightStyleTransition;
+			sourceTree = "<group>";
+		};
+		71FC037520B4289B00CC5A02 /* NightNight */ = {
+			isa = PBXGroup;
+			children = (
+				71FC037620B4289B00CC5A02 /* MixedResource.swift */,
+				71FC037720B4289B00CC5A02 /* UINavigationBar+MixedBarStyle.swift */,
+				71FC037820B4289B00CC5A02 /* UIImageView+Mixed.swift */,
+				71FC037920B4289B00CC5A02 /* Keys.swift */,
+				71FC037A20B4289B00CC5A02 /* NSObject+Mixed.swift */,
+				71FC037B20B4289B00CC5A02 /* CALayer+Mixed.swift */,
+				71FC037C20B4289B00CC5A02 /* UIKit */,
+				71FC038C20B4289B00CC5A02 /* NSObject+Customize.swift */,
+				71FC038D20B4289B00CC5A02 /* .gitkeep */,
+				71FC038E20B4289B00CC5A02 /* NotificationManager.swift */,
+				71FC038F20B4289B00CC5A02 /* NNMutableAttributedString.swift */,
+				71FC039020B4289B00CC5A02 /* UIButton+Mixed.swift */,
+				71FC039120B4289B00CC5A02 /* UIColor+RGB.swift */,
+				71FC039220B4289B00CC5A02 /* NightNight.swift */,
+				71FC039320B4289B00CC5A02 /* UINavigationBar+MixedTitleTextAttributes.swift */,
+				71FC039420B4289B00CC5A02 /* AttributeNames.swift */,
+				71FC039520B4289B00CC5A02 /* Dictionary+AttributedStringKeys.swift */,
+				71FC039620B4289B00CC5A02 /* UIView+IBInspectable.swift */,
+			);
+			path = NightNight;
+			sourceTree = "<group>";
+		};
+		71FC037C20B4289B00CC5A02 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				71FC037D20B4289B00CC5A02 /* UISwitch+Mixed.swift */,
+				71FC037E20B4289B00CC5A02 /* UIProgressView+Mixed.swift */,
+				71FC037F20B4289B00CC5A02 /* UITextView+Mixed.swift */,
+				71FC038020B4289B00CC5A02 /* UIToolbar+Mixed.swift */,
+				71FC038120B4289B00CC5A02 /* UIView+Mixed.swift */,
+				71FC038220B4289B00CC5A02 /* UIBarButtonItem+Mixed.swift */,
+				71FC038320B4289B00CC5A02 /* UILabel+Mixed.swift */,
+				71FC038420B4289B00CC5A02 /* UISlider+Mixed.swift */,
+				71FC038520B4289B00CC5A02 /* UITextField+Mixed.swift */,
+				71FC038620B4289B00CC5A02 /* UIPopoverPresentationController+Mixed.swift */,
+				71FC038720B4289B00CC5A02 /* UISearchBar+Mixed.swift */,
+				71FC038820B4289B00CC5A02 /* UIPageControl+Mixed.swift */,
+				71FC038920B4289B00CC5A02 /* UITableView+Mixed.swift */,
+				71FC038A20B4289B00CC5A02 /* UINavigationBar+Mixed.swift */,
+				71FC038B20B4289B00CC5A02 /* UITabBar+Mixed.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71FC035F20B41F1E00CC5A02 /* NightStyleTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71FC037220B41F2000CC5A02 /* Build configuration list for PBXNativeTarget "NightStyleTransition" */;
+			buildPhases = (
+				71FC035C20B41F1E00CC5A02 /* Sources */,
+				71FC035D20B41F1E00CC5A02 /* Frameworks */,
+				71FC035E20B41F1E00CC5A02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NightStyleTransition;
+			productName = NightStyleTransition;
+			productReference = 71FC036020B41F1E00CC5A02 /* NightStyleTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71FC035820B41F1E00CC5A02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = canoe;
+				TargetAttributes = {
+					71FC035F20B41F1E00CC5A02 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 71FC035B20B41F1E00CC5A02 /* Build configuration list for PBXProject "NightStyleTransition" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71FC035720B41F1E00CC5A02;
+			productRefGroup = 71FC036120B41F1E00CC5A02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71FC035F20B41F1E00CC5A02 /* NightStyleTransition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71FC035E20B41F1E00CC5A02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71FC036E20B41F2000CC5A02 /* LaunchScreen.storyboard in Resources */,
+				71FC036B20B41F2000CC5A02 /* Assets.xcassets in Resources */,
+				71FC036920B41F1E00CC5A02 /* Main.storyboard in Resources */,
+				71FC03AD20B4289C00CC5A02 /* .gitkeep in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71FC035C20B41F1E00CC5A02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71FC036620B41F1E00CC5A02 /* ViewController.swift in Sources */,
+				71FC039C20B4289C00CC5A02 /* CALayer+Mixed.swift in Sources */,
+				71FC03B220B4289C00CC5A02 /* NightNight.swift in Sources */,
+				71FC03A820B4289C00CC5A02 /* UIPageControl+Mixed.swift in Sources */,
+				71FC03A420B4289C00CC5A02 /* UISlider+Mixed.swift in Sources */,
+				71FC03A720B4289C00CC5A02 /* UISearchBar+Mixed.swift in Sources */,
+				71FC03B620B4289C00CC5A02 /* UIView+IBInspectable.swift in Sources */,
+				71FC03B320B4289C00CC5A02 /* UINavigationBar+MixedTitleTextAttributes.swift in Sources */,
+				71FC039A20B4289C00CC5A02 /* Keys.swift in Sources */,
+				71FC03B420B4289C00CC5A02 /* AttributeNames.swift in Sources */,
+				71FC039E20B4289C00CC5A02 /* UIProgressView+Mixed.swift in Sources */,
+				71FC03AA20B4289C00CC5A02 /* UINavigationBar+Mixed.swift in Sources */,
+				71FC03A120B4289C00CC5A02 /* UIView+Mixed.swift in Sources */,
+				71FC03B520B4289C00CC5A02 /* Dictionary+AttributedStringKeys.swift in Sources */,
+				71FC03A520B4289C00CC5A02 /* UITextField+Mixed.swift in Sources */,
+				71FC039F20B4289C00CC5A02 /* UITextView+Mixed.swift in Sources */,
+				71FC039820B4289C00CC5A02 /* UINavigationBar+MixedBarStyle.swift in Sources */,
+				71FC039920B4289C00CC5A02 /* UIImageView+Mixed.swift in Sources */,
+				71FC03A020B4289C00CC5A02 /* UIToolbar+Mixed.swift in Sources */,
+				71FC03A320B4289C00CC5A02 /* UILabel+Mixed.swift in Sources */,
+				71FC03B120B4289C00CC5A02 /* UIColor+RGB.swift in Sources */,
+				71FC03A920B4289C00CC5A02 /* UITableView+Mixed.swift in Sources */,
+				71FC03AB20B4289C00CC5A02 /* UITabBar+Mixed.swift in Sources */,
+				71FC03AC20B4289C00CC5A02 /* NSObject+Customize.swift in Sources */,
+				71FC036420B41F1E00CC5A02 /* AppDelegate.swift in Sources */,
+				71FC039B20B4289C00CC5A02 /* NSObject+Mixed.swift in Sources */,
+				71FC039D20B4289C00CC5A02 /* UISwitch+Mixed.swift in Sources */,
+				71FC03A220B4289C00CC5A02 /* UIBarButtonItem+Mixed.swift in Sources */,
+				71FC03AE20B4289C00CC5A02 /* NotificationManager.swift in Sources */,
+				71FC03AF20B4289C00CC5A02 /* NNMutableAttributedString.swift in Sources */,
+				71FC039720B4289C00CC5A02 /* MixedResource.swift in Sources */,
+				71FC03B020B4289C00CC5A02 /* UIButton+Mixed.swift in Sources */,
+				71FC03A620B4289C00CC5A02 /* UIPopoverPresentationController+Mixed.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		71FC036720B41F1E00CC5A02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71FC036820B41F1E00CC5A02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71FC036C20B41F2000CC5A02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71FC036D20B41F2000CC5A02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71FC037020B41F2000CC5A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71FC037120B41F2000CC5A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71FC037320B41F2000CC5A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62J9RVU398;
+				INFOPLIST_FILE = NightStyleTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = canoe.NightStyleTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71FC037420B41F2000CC5A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62J9RVU398;
+				INFOPLIST_FILE = NightStyleTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = canoe.NightStyleTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71FC035B20B41F1E00CC5A02 /* Build configuration list for PBXProject "NightStyleTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71FC037020B41F2000CC5A02 /* Debug */,
+				71FC037120B41F2000CC5A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71FC037220B41F2000CC5A02 /* Build configuration list for PBXNativeTarget "NightStyleTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71FC037320B41F2000CC5A02 /* Debug */,
+				71FC037420B41F2000CC5A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71FC035820B41F1E00CC5A02 /* Project object */;
+}
