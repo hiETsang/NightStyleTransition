@@ -14,8 +14,9 @@ class ViewController: UITableViewController,UIGestureRecognizerDelegate {
         super.viewDidLoad()
 
         configUI()
-        NightNight.theme = .night
+        NightNight.theme = .normal
         
+        view.configNightStylePanGestureRecognizer()
         
     }
     

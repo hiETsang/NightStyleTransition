@@ -10,13 +10,15 @@ import UIKit
 
 class NextViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    var tableView : TestTableView?
+    var tableView : UITableView?
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configUI()
+        
+        tableView?.configNightStylePanGestureRecognizer()
     }
     
     func configUI() {
@@ -25,11 +27,13 @@ class NextViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         navigationController?.navigationBar.mixedBarStyle = MixedBarStyle(normal: .default, night: .black)
         view.mixedBackgroundColor = MixedColor(normal: .white, night: .black)
         
-        tableView = TestTableView(frame: view.bounds, style: .plain)
+        tableView = UITableView(frame: view.bounds, style: .plain)
         tableView?.delegate = self
         tableView?.dataSource = self
         view.addSubview(tableView!)
+        tableView?.mixedBackgroundColor = MixedColor(normal: .white, night: .black)
         
+        tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -41,8 +45,11 @@ class NextViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.imageView?.image = UIImage(named: "appodden")
+        cell.textLabel?.text = "双指下滑夜间模式，双指上滑日间模式"
         cell.mixedBackgroundColor = MixedColor(normal: .white, night: .black)
+        cell.textLabel?.mixedTextColor = MixedColor(normal: .black, night: .white)
         return cell
     }
 

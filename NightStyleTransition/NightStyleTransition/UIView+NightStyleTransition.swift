@@ -12,6 +12,7 @@ public extension UIView{
     fileprivate struct AssociatedKeys{
         static var KPreviousStyleViewSnapshotKey = "KPreviousStyleViewSnapshotKey"
         static var KSnapshotMaskLayerKey = "KSnapshotMaskLayerKey"
+        static var KIsMovingDown = "KIsMovingDown"
     }
     
     private var previousStyleViewSnapshot: UIView? {
@@ -32,6 +33,15 @@ public extension UIView{
         }
     }
     
+    private var isMovingDown: Bool? {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedKeys.KIsMovingDown) as? Bool
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.KIsMovingDown, newValue, .OBJC_ASSOCIATION_ASSIGN)
+        }
+    }
+    
     //MARK: - Gesture
     public func configNightStylePanGestureRecognizer() {
         
@@ -41,8 +51,8 @@ public extension UIView{
                 self.beginInteractiveStyleTransition(withPanRecognizer: panGesture as! UIPanGestureRecognizer)
             case .changed:
                 self.adjustMaskLayer(basedOn: panGesture as! UIPanGestureRecognizer)
-            case .ended, .failed:
-                self.endInteractiveStyleTransition(withPanRecognizer: panGesture as! UIPanGestureRecognizer)
+            case .ended, .failed:break
+//                self.endInteractiveStyleTransition(withPanRecognizer: panGesture as! UIPanGestureRecognizer)
             default: break
             }
         }
@@ -63,75 +73,75 @@ public extension UIView{
 //    }
     
     //MARK: - Transition
-    //开始动画
+    //开始手势
     func beginInteractiveStyleTransition(withPanRecognizer panRecognizer: UIPanGestureRecognizer) {
         guard let window = self.window else {
             return
         }
         
-        // We snapshot the window before applying the new style, and make sure
-        // it's positioned on top of all the other content.
+        //对当前页面进行截图并且移到最上
         previousStyleViewSnapshot = window.snapshotView(afterScreenUpdates: false)
         window.addSubview(previousStyleViewSnapshot!)
         window.bringSubview(toFront: previousStyleViewSnapshot!)
         
-        // When we have the snapshot we create a new mask layer that's used to
-        // control how much of the previous view we display as the transition
-        // progresses.
+        //创建mask layer 用于动画覆盖的效果
         snapshotMaskLayer = CAShapeLayer()
         snapshotMaskLayer?.path = UIBezierPath(rect: window.bounds).cgPath
         snapshotMaskLayer?.fillColor = UIColor.black.cgColor
         previousStyleViewSnapshot?.layer.mask = snapshotMaskLayer
         
-        // Now we're free to apply the new style. This won't be visible until
-        // the user pans more since the snapshot is displayed on top of the
-        // actual content.
-        
+        //切换到新的风格
         NightNight.toggleNightTheme()
         
-        // Finally we make our first adjustment to the mask layer based on the
-        // values of the pan recognizer.
+        //判断上滑还是下滑
+        let translation = panRecognizer.translation(in: self.window)
+        isMovingDown = translation.y > 0.0
+        
+        //对遮罩层进行第一次调整
         adjustMaskLayer(basedOn: panRecognizer)
     }
     
     fileprivate func adjustMaskLayer(basedOn panRecognizer: UIPanGestureRecognizer) {
         adjustMaskLayerPosition(basedOn: panRecognizer)
-        adjustMaskLayerPath(basedOn: panRecognizer)
+//        adjustMaskLayerPath(basedOn: panRecognizer)
     }
     
+    //调整layer的位置
     fileprivate func adjustMaskLayerPosition(basedOn panRecognizer: UIPanGestureRecognizer) {
         guard let window = self.window else {
             return
         }
         
-        // We need to disable implicit animations since we don't want to
-        // animate the position change of the mask layer.
+        //禁用隐式动画
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         
         let verticalTranslation = panRecognizer.translation(in: window).y
-        if verticalTranslation < 0.0 {
-            // We wan't to prevent the user from moving the mask layer out the
-            // top of the window, since doing so would show the new style at
-            // the bottom of the window instead.
-            // By resetting the translation we make sure there's no visual
-            // delay between when the user tries to pan upwards and when they
-            // start panning downwards again.
-            panRecognizer.setTranslation(.zero, in: window)
-            snapshotMaskLayer?.frame.origin.y = 0.0
-        } else {
-            // Simply move the mask layer as much as the user has panned.
-            // Note that if we had used the _location_ of the pan recognizer
-            // instead of the translation, the top of the mask layer would
-            // follow the fingers exactly. Using the translation results in a
-            // better user experience since the location of the mask layer is
-            // instead relative to the distance moved.
-            snapshotMaskLayer?.frame.origin.y = verticalTranslation
+        print("verticalTranslation is \(verticalTranslation)")
+
+        if (isMovingDown == true) {
+            if verticalTranslation < 0.0 {
+                snapshotMaskLayer?.frame.origin.y = 0.0
+                panRecognizer.setTranslation(.zero, in: window)
+            } else {
+                snapshotMaskLayer?.frame.origin.y = verticalTranslation
+            }
+        }else
+        {
+            if verticalTranslation < 0.0 {
+                snapshotMaskLayer?.frame.size.height = (self.window?.bounds.height)! + verticalTranslation
+            } else {
+                snapshotMaskLayer?.frame.size.height = (self.window?.bounds.height)!
+            }
+            print("snapshotMaskLayer.h is \(String(describing: snapshotMaskLayer?.frame.size.height))")
+
         }
+        
         
         CATransaction.commit()
     }
     
+    //调整layer的曲线弧度
     fileprivate func adjustMaskLayerPath(basedOn panRecognizer: UIPanGestureRecognizer) {
         guard let window = self.window else {
             return
