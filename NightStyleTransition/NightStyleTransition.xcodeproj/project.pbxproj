@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7166686920B53B95000AC2BE /* UIGestureRecognizer+X.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166686820B53B95000AC2BE /* UIGestureRecognizer+X.swift */; };
+		7166686B20B53E26000AC2BE /* UIView+NightStyleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166686A20B53E26000AC2BE /* UIView+NightStyleTransition.swift */; };
+		7166686D20B54B3B000AC2BE /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166686C20B54B3B000AC2BE /* NextViewController.swift */; };
 		71FC036420B41F1E00CC5A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC036320B41F1E00CC5A02 /* AppDelegate.swift */; };
 		71FC036620B41F1E00CC5A02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC036520B41F1E00CC5A02 /* ViewController.swift */; };
 		71FC036920B41F1E00CC5A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FC036720B41F1E00CC5A02 /* Main.storyboard */; };
@@ -47,6 +50,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7166686820B53B95000AC2BE /* UIGestureRecognizer+X.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+X.swift"; sourceTree = "<group>"; };
+		7166686A20B53E26000AC2BE /* UIView+NightStyleTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NightStyleTransition.swift"; sourceTree = "<group>"; };
+		7166686C20B54B3B000AC2BE /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		71FC036020B41F1E00CC5A02 /* NightStyleTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightStyleTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FC036320B41F1E00CC5A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71FC036520B41F1E00CC5A02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,10 +127,13 @@
 			children = (
 				71FC036320B41F1E00CC5A02 /* AppDelegate.swift */,
 				71FC036520B41F1E00CC5A02 /* ViewController.swift */,
+				7166686A20B53E26000AC2BE /* UIView+NightStyleTransition.swift */,
+				7166686820B53B95000AC2BE /* UIGestureRecognizer+X.swift */,
 				71FC036720B41F1E00CC5A02 /* Main.storyboard */,
 				71FC036A20B41F2000CC5A02 /* Assets.xcassets */,
 				71FC036C20B41F2000CC5A02 /* LaunchScreen.storyboard */,
 				71FC036F20B41F2000CC5A02 /* Info.plist */,
+				7166686C20B54B3B000AC2BE /* NextViewController.swift */,
 			);
 			path = NightStyleTransition;
 			sourceTree = "<group>";
@@ -256,7 +265,9 @@
 				71FC03A720B4289C00CC5A02 /* UISearchBar+Mixed.swift in Sources */,
 				71FC03B620B4289C00CC5A02 /* UIView+IBInspectable.swift in Sources */,
 				71FC03B320B4289C00CC5A02 /* UINavigationBar+MixedTitleTextAttributes.swift in Sources */,
+				7166686920B53B95000AC2BE /* UIGestureRecognizer+X.swift in Sources */,
 				71FC039A20B4289C00CC5A02 /* Keys.swift in Sources */,
+				7166686B20B53E26000AC2BE /* UIView+NightStyleTransition.swift in Sources */,
 				71FC03B420B4289C00CC5A02 /* AttributeNames.swift in Sources */,
 				71FC039E20B4289C00CC5A02 /* UIProgressView+Mixed.swift in Sources */,
 				71FC03AA20B4289C00CC5A02 /* UINavigationBar+Mixed.swift in Sources */,
@@ -271,6 +282,7 @@
 				71FC03B120B4289C00CC5A02 /* UIColor+RGB.swift in Sources */,
 				71FC03A920B4289C00CC5A02 /* UITableView+Mixed.swift in Sources */,
 				71FC03AB20B4289C00CC5A02 /* UITabBar+Mixed.swift in Sources */,
+				7166686D20B54B3B000AC2BE /* NextViewController.swift in Sources */,
 				71FC03AC20B4289C00CC5A02 /* NSObject+Customize.swift in Sources */,
 				71FC036420B41F1E00CC5A02 /* AppDelegate.swift in Sources */,
 				71FC039B20B4289C00CC5A02 /* NSObject+Mixed.swift in Sources */,
