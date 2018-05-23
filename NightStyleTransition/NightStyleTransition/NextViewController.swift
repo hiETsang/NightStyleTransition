@@ -8,12 +8,14 @@
 
 import UIKit
 
-class NextViewController: UIViewController {
+class NextViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    var tableView : TestTableView?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
         configUI()
     }
     
@@ -22,6 +24,26 @@ class NextViewController: UIViewController {
         
         navigationController?.navigationBar.mixedBarStyle = MixedBarStyle(normal: .default, night: .black)
         view.mixedBackgroundColor = MixedColor(normal: .white, night: .black)
+        
+        tableView = TestTableView(frame: view.bounds, style: .plain)
+        tableView?.delegate = self
+        tableView?.dataSource = self
+        view.addSubview(tableView!)
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.mixedBackgroundColor = MixedColor(normal: .white, night: .black)
+        return cell
     }
 
     override func didReceiveMemoryWarning() {
