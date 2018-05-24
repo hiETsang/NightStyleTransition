@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7163205820B6C11000387D52 /* NightStyleWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163205720B6C11000387D52 /* NightStyleWindow.swift */; };
+		7163205A20B6E63200387D52 /* TestTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163205920B6E63200387D52 /* TestTableView.swift */; };
 		7166686920B53B95000AC2BE /* UIGestureRecognizer+X.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166686820B53B95000AC2BE /* UIGestureRecognizer+X.swift */; };
 		7166686B20B53E26000AC2BE /* UIView+NightStyleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166686A20B53E26000AC2BE /* UIView+NightStyleTransition.swift */; };
 		7166686D20B54B3B000AC2BE /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166686C20B54B3B000AC2BE /* NextViewController.swift */; };
@@ -50,6 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7163205720B6C11000387D52 /* NightStyleWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightStyleWindow.swift; sourceTree = "<group>"; };
+		7163205920B6E63200387D52 /* TestTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableView.swift; sourceTree = "<group>"; };
 		7166686820B53B95000AC2BE /* UIGestureRecognizer+X.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+X.swift"; sourceTree = "<group>"; };
 		7166686A20B53E26000AC2BE /* UIView+NightStyleTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NightStyleTransition.swift"; sourceTree = "<group>"; };
 		7166686C20B54B3B000AC2BE /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 				71FC036C20B41F2000CC5A02 /* LaunchScreen.storyboard */,
 				71FC036F20B41F2000CC5A02 /* Info.plist */,
 				7166686C20B54B3B000AC2BE /* NextViewController.swift */,
+				7163205720B6C11000387D52 /* NightStyleWindow.swift */,
+				7163205920B6E63200387D52 /* TestTableView.swift */,
 			);
 			path = NightStyleTransition;
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 				71FC039920B4289C00CC5A02 /* UIImageView+Mixed.swift in Sources */,
 				71FC03A020B4289C00CC5A02 /* UIToolbar+Mixed.swift in Sources */,
 				71FC03A320B4289C00CC5A02 /* UILabel+Mixed.swift in Sources */,
+				7163205820B6C11000387D52 /* NightStyleWindow.swift in Sources */,
 				71FC03B120B4289C00CC5A02 /* UIColor+RGB.swift in Sources */,
 				71FC03A920B4289C00CC5A02 /* UITableView+Mixed.swift in Sources */,
 				71FC03AB20B4289C00CC5A02 /* UITabBar+Mixed.swift in Sources */,
@@ -291,6 +298,7 @@
 				71FC03AE20B4289C00CC5A02 /* NotificationManager.swift in Sources */,
 				71FC03AF20B4289C00CC5A02 /* NNMutableAttributedString.swift in Sources */,
 				71FC039720B4289C00CC5A02 /* MixedResource.swift in Sources */,
+				7163205A20B6E63200387D52 /* TestTableView.swift in Sources */,
 				71FC03B020B4289C00CC5A02 /* UIButton+Mixed.swift in Sources */,
 				71FC03A620B4289C00CC5A02 /* UIPopoverPresentationController+Mixed.swift in Sources */,
 			);

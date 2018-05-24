@@ -16,10 +16,9 @@ class ViewController: UITableViewController,UIGestureRecognizerDelegate {
         configUI()
         NightNight.theme = .normal
         
-        view.configNightStylePanGestureRecognizer()
+//        view.configNightStylePanGestureRecognizer()
         
     }
-    
     
     //MARK: - action
     @objc func toggleNightTheme() {
@@ -39,8 +38,6 @@ class ViewController: UITableViewController,UIGestureRecognizerDelegate {
         view.mixedBackgroundColor = MixedColor(normal: .white, night: .black)
         tableView.mixedBackgroundColor = MixedColor(normal: .white, night: .black)
     }
-    
-    
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1

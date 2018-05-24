@@ -10,7 +10,7 @@ import UIKit
 
 class NextViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    var tableView : UITableView?
+    var tableView : TestTableView?
     
 
     override func viewDidLoad() {
@@ -18,16 +18,17 @@ class NextViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         configUI()
         
-        tableView?.configNightStylePanGestureRecognizer()
+//        tableView?.configNightStylePanGestureRecognizer()
     }
     
+
     func configUI() {
         title = "NextViewController"
         
         navigationController?.navigationBar.mixedBarStyle = MixedBarStyle(normal: .default, night: .black)
         view.mixedBackgroundColor = MixedColor(normal: .white, night: .black)
         
-        tableView = UITableView(frame: view.bounds, style: .plain)
+        tableView = TestTableView(frame: view.bounds, style: .plain)
         tableView?.delegate = self
         tableView?.dataSource = self
         view.addSubview(tableView!)
