@@ -16,14 +16,14 @@ class NightStyleWindow: UIWindow {
         return super.hitTest(point, with: event)
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("window touchesBegan")
-    }
-    
-    override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        print("window gestureRecognizerShouldBegin")
-        return true
-    }
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        print("window touchesBegan")
+//    }
+//    
+//    override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+//        print("window gestureRecognizerShouldBegin")
+//        return true
+//    }
     
 
     /*
