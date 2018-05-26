@@ -1,8 +1,8 @@
 # NightStyleTransition
-![xcode](https://img.shields.io/badge/xcode-9.3-green.svg)  ![swift](https://img.shields.io/badge/swift-4.1-orange.svg)  ![build](https://img.shields.io/travis/USER/REPO.svg)
+![xcode](https://img.shields.io/badge/xcode-9.3-green.svg)  ![swift](https://img.shields.io/badge/swift-4.1-orange.svg)  ![build](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
 一种很流畅自然的切换夜间模式的交互方式，通过简单的一句话就能集成双指上下滑切换模式。
-![](README/show.gif)
+![](https://github.com/hiETsang/NightStyleTransition/blob/master/show.gif)
 
 - - - -
 ## 集成
