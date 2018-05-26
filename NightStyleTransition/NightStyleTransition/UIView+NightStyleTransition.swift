@@ -62,8 +62,7 @@ public extension UIView{
     }
     
     //MARK: - Transition
-    //开始手势
-    func beginInteractiveStyleTransition(withPanRecognizer panRecognizer: UIPanGestureRecognizer) {
+    fileprivate func beginInteractiveStyleTransition(withPanRecognizer panRecognizer: UIPanGestureRecognizer) {
         let window = self.window ?? self
         
         //对当前页面进行截图并且移到最上
@@ -129,39 +128,26 @@ public extension UIView{
         let maskingPath = UIBezierPath()
         
         if (isMovingDown == true) {
-            //移动到原点
-            maskingPath.move(to: .zero)
-            
             //弹性效果设置，如果要增加弹性效果，减小阻尼值
             let damping: CGFloat = 35.0
             //速度/阻尼
             let verticalOffset = panRecognizer.velocity(in: window).y / damping
             
+            maskingPath.move(to: .zero)
             maskingPath.addQuadCurve(to: CGPoint(x: window.bounds.maxX, y: 0.0), controlPoint: CGPoint(x: window.bounds.midX, y: verticalOffset))
-            
-            // 最下面的线
             maskingPath.addLine(to: CGPoint(x: window.bounds.maxX, y: window.bounds.maxY))
-            // 左边的线
             maskingPath.addLine(to: CGPoint(x: 0.0, y: window.bounds.maxY))
-            // 闭合曲线
             maskingPath.close()
         } else {
-            //移动到左下点
-            maskingPath.move(to: CGPoint(x: 0.0, y: window.bounds.height))
-            
             //弹性效果设置，如果要增加弹性效果，减小阻尼值
             let damping: CGFloat = 35.0
             //速度/阻尼
             let verticalOffset = panRecognizer.velocity(in: window).y / damping
             
+            maskingPath.move(to: CGPoint(x: 0.0, y: window.bounds.height))
             maskingPath.addQuadCurve(to: CGPoint(x: window.bounds.maxX, y: window.bounds.height), controlPoint: CGPoint(x: window.bounds.midX, y: window.bounds.height + verticalOffset))
-            
-            // 右边的线
             maskingPath.addLine(to: CGPoint(x: window.bounds.maxX, y: 0.0))
-            // 最上面的线
             maskingPath.addLine(to: CGPoint(x: 0.0, y: 0.0))
-            
-            // 闭合曲线
             maskingPath.close()
         }
         snapshotMaskLayer?.path = maskingPath.cgPath
@@ -174,7 +160,6 @@ public extension UIView{
         }
         
         let velocity = panRecognizer.velocity(in: window)
-        
         var targetLocation:CGPoint!
         
         if (velocity.y > 0.0) {
@@ -183,7 +168,6 @@ public extension UIView{
                 if self.isMovingDown == false {
                     NightNight.toggleNightTheme()
                 }
-                
                 self.cleanupAfterInteractiveStyleTransition()
             }
         } else {
@@ -192,50 +176,10 @@ public extension UIView{
                 if self.isMovingDown == true {
                     NightNight.toggleNightTheme()
                 }
-                
                 self.cleanupAfterInteractiveStyleTransition()
             }
         }
-        
-        //
-        //        if velocity.y > 0.0 {
-        //            movingDownInteractiveStyleTransition(withVelocity: velocity)
-        //        } else {
-        //            movingUpInteractiveStyleTransition(withVelocity: velocity)
-        //        }
     }
-    
-//    fileprivate func movingUpInteractiveStyleTransition(withVelocity velocity: CGPoint) {
-//        guard let snapshotMaskLayer = snapshotMaskLayer else {
-//            return
-//        }
-//
-//        if (isMovingDown == true) {
-//            //下滑的状态的话，最后手势往上需要取消
-//
-//        }else
-//        {
-//            animate(snapshotMaskLayer, to: .zero, withVelocity: velocity) {
-//                NightNight.toggleNightTheme()
-//                self.cleanupAfterInteractiveStyleTransition()
-//            }
-//        }
-//
-//
-//    }
-//
-//    fileprivate func movingDownInteractiveStyleTransition(withVelocity velocity: CGPoint) {
-//        guard let window = self.window, let snapshotMaskLayer = snapshotMaskLayer else {
-//            return
-//        }
-//
-//
-//
-//        let targetLocation = CGPoint(x: 0.0, y: window.bounds.maxY)
-//        animate(snapshotMaskLayer, to: targetLocation, withVelocity: velocity) {
-//            self.cleanupAfterInteractiveStyleTransition()
-//        }
-//    }
     
     fileprivate func cleanupAfterInteractiveStyleTransition() {
         self.previousStyleViewSnapshot?.removeFromSuperview()

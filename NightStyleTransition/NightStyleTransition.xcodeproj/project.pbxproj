@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7163205820B6C11000387D52 /* NightStyleWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163205720B6C11000387D52 /* NightStyleWindow.swift */; };
-		7163205A20B6E63200387D52 /* TestTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163205920B6E63200387D52 /* TestTableView.swift */; };
+		71407EBB20B91AC000BEF431 /* Hulk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71407EB620B91ABF00BEF431 /* Hulk.jpg */; };
+		71407EBC20B91AC000BEF431 /* IronMan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71407EB720B91ABF00BEF431 /* IronMan.jpg */; };
+		71407EBD20B91AC000BEF431 /* Captain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71407EB820B91ABF00BEF431 /* Captain.jpg */; };
+		71407EBE20B91AC000BEF431 /* SpiderMan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71407EB920B91ABF00BEF431 /* SpiderMan.jpg */; };
+		71407EBF20B91AC000BEF431 /* Thor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71407EBA20B91AC000BEF431 /* Thor.jpg */; };
 		7166686920B53B95000AC2BE /* UIGestureRecognizer+X.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166686820B53B95000AC2BE /* UIGestureRecognizer+X.swift */; };
 		7166686B20B53E26000AC2BE /* UIView+NightStyleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166686A20B53E26000AC2BE /* UIView+NightStyleTransition.swift */; };
-		7166686D20B54B3B000AC2BE /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166686C20B54B3B000AC2BE /* NextViewController.swift */; };
-		71FC036420B41F1E00CC5A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC036320B41F1E00CC5A02 /* AppDelegate.swift */; };
-		71FC036620B41F1E00CC5A02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC036520B41F1E00CC5A02 /* ViewController.swift */; };
-		71FC036920B41F1E00CC5A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FC036720B41F1E00CC5A02 /* Main.storyboard */; };
-		71FC036B20B41F2000CC5A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71FC036A20B41F2000CC5A02 /* Assets.xcassets */; };
-		71FC036E20B41F2000CC5A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FC036C20B41F2000CC5A02 /* LaunchScreen.storyboard */; };
+		71962D2E20B8FC3B00AB9B38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71962D2420B8FC3A00AB9B38 /* ViewController.swift */; };
+		71962D2F20B8FC3B00AB9B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71962D2620B8FC3A00AB9B38 /* LaunchScreen.storyboard */; };
+		71962D3020B8FC3B00AB9B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71962D2820B8FC3A00AB9B38 /* Main.storyboard */; };
+		71962D3120B8FC3B00AB9B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71962D2A20B8FC3A00AB9B38 /* Assets.xcassets */; };
+		71962D3320B8FC3B00AB9B38 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71962D2C20B8FC3A00AB9B38 /* NextViewController.swift */; };
+		71962D3420B8FC3B00AB9B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71962D2D20B8FC3A00AB9B38 /* AppDelegate.swift */; };
 		71FC039720B4289C00CC5A02 /* MixedResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC037620B4289B00CC5A02 /* MixedResource.swift */; };
 		71FC039820B4289C00CC5A02 /* UINavigationBar+MixedBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC037720B4289B00CC5A02 /* UINavigationBar+MixedBarStyle.swift */; };
 		71FC039920B4289C00CC5A02 /* UIImageView+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC037820B4289B00CC5A02 /* UIImageView+Mixed.swift */; };
@@ -52,18 +55,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7163205720B6C11000387D52 /* NightStyleWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightStyleWindow.swift; sourceTree = "<group>"; };
-		7163205920B6E63200387D52 /* TestTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableView.swift; sourceTree = "<group>"; };
+		71407EB620B91ABF00BEF431 /* Hulk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hulk.jpg; sourceTree = "<group>"; };
+		71407EB720B91ABF00BEF431 /* IronMan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IronMan.jpg; sourceTree = "<group>"; };
+		71407EB820B91ABF00BEF431 /* Captain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Captain.jpg; sourceTree = "<group>"; };
+		71407EB920B91ABF00BEF431 /* SpiderMan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SpiderMan.jpg; sourceTree = "<group>"; };
+		71407EBA20B91AC000BEF431 /* Thor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thor.jpg; sourceTree = "<group>"; };
 		7166686820B53B95000AC2BE /* UIGestureRecognizer+X.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+X.swift"; sourceTree = "<group>"; };
 		7166686A20B53E26000AC2BE /* UIView+NightStyleTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NightStyleTransition.swift"; sourceTree = "<group>"; };
-		7166686C20B54B3B000AC2BE /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		71962D2420B8FC3A00AB9B38 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71962D2720B8FC3A00AB9B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71962D2920B8FC3A00AB9B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		71962D2A20B8FC3A00AB9B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71962D2B20B8FC3A00AB9B38 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71962D2C20B8FC3A00AB9B38 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		71962D2D20B8FC3A00AB9B38 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71FC036020B41F1E00CC5A02 /* NightStyleTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightStyleTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		71FC036320B41F1E00CC5A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71FC036520B41F1E00CC5A02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		71FC036820B41F1E00CC5A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		71FC036A20B41F2000CC5A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		71FC036D20B41F2000CC5A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		71FC036F20B41F2000CC5A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71FC037620B4289B00CC5A02 /* MixedResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedResource.swift; sourceTree = "<group>"; };
 		71FC037720B4289B00CC5A02 /* UINavigationBar+MixedBarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+MixedBarStyle.swift"; sourceTree = "<group>"; };
 		71FC037820B4289B00CC5A02 /* UIImageView+Mixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Mixed.swift"; sourceTree = "<group>"; };
@@ -109,11 +115,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71407EB520B91AAA00BEF431 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				71407EB820B91ABF00BEF431 /* Captain.jpg */,
+				71407EB620B91ABF00BEF431 /* Hulk.jpg */,
+				71407EB720B91ABF00BEF431 /* IronMan.jpg */,
+				71407EB920B91ABF00BEF431 /* SpiderMan.jpg */,
+				71407EBA20B91AC000BEF431 /* Thor.jpg */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		71962D2320B8FA4500AB9B38 /* NightStyleTransition */ = {
+			isa = PBXGroup;
+			children = (
+				7166686A20B53E26000AC2BE /* UIView+NightStyleTransition.swift */,
+				7166686820B53B95000AC2BE /* UIGestureRecognizer+X.swift */,
+			);
+			path = NightStyleTransition;
+			sourceTree = "<group>";
+		};
+		71962D2520B8FC3A00AB9B38 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				71962D2620B8FC3A00AB9B38 /* LaunchScreen.storyboard */,
+				71962D2820B8FC3A00AB9B38 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
 		71FC035720B41F1E00CC5A02 = {
 			isa = PBXGroup;
 			children = (
+				71962D2320B8FA4500AB9B38 /* NightStyleTransition */,
 				71FC037520B4289B00CC5A02 /* NightNight */,
-				71FC036220B41F1E00CC5A02 /* NightStyleTransition */,
+				71FC036220B41F1E00CC5A02 /* MainClass */,
 				71FC036120B41F1E00CC5A02 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,22 +163,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		71FC036220B41F1E00CC5A02 /* NightStyleTransition */ = {
+		71FC036220B41F1E00CC5A02 /* MainClass */ = {
 			isa = PBXGroup;
 			children = (
-				71FC036320B41F1E00CC5A02 /* AppDelegate.swift */,
-				71FC036520B41F1E00CC5A02 /* ViewController.swift */,
-				7166686A20B53E26000AC2BE /* UIView+NightStyleTransition.swift */,
-				7166686820B53B95000AC2BE /* UIGestureRecognizer+X.swift */,
-				71FC036720B41F1E00CC5A02 /* Main.storyboard */,
-				71FC036A20B41F2000CC5A02 /* Assets.xcassets */,
-				71FC036C20B41F2000CC5A02 /* LaunchScreen.storyboard */,
-				71FC036F20B41F2000CC5A02 /* Info.plist */,
-				7166686C20B54B3B000AC2BE /* NextViewController.swift */,
-				7163205720B6C11000387D52 /* NightStyleWindow.swift */,
-				7163205920B6E63200387D52 /* TestTableView.swift */,
+				71407EB520B91AAA00BEF431 /* source */,
+				71962D2D20B8FC3A00AB9B38 /* AppDelegate.swift */,
+				71962D2420B8FC3A00AB9B38 /* ViewController.swift */,
+				71962D2C20B8FC3A00AB9B38 /* NextViewController.swift */,
+				71962D2A20B8FC3A00AB9B38 /* Assets.xcassets */,
+				71962D2520B8FC3A00AB9B38 /* Base.lproj */,
+				71962D2B20B8FC3A00AB9B38 /* Info.plist */,
 			);
-			path = NightStyleTransition;
+			path = MainClass;
 			sourceTree = "<group>";
 		};
 		71FC037520B4289B00CC5A02 /* NightNight */ = {
@@ -249,10 +282,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71FC036E20B41F2000CC5A02 /* LaunchScreen.storyboard in Resources */,
-				71FC036B20B41F2000CC5A02 /* Assets.xcassets in Resources */,
-				71FC036920B41F1E00CC5A02 /* Main.storyboard in Resources */,
+				71407EBC20B91AC000BEF431 /* IronMan.jpg in Resources */,
+				71407EBD20B91AC000BEF431 /* Captain.jpg in Resources */,
+				71407EBF20B91AC000BEF431 /* Thor.jpg in Resources */,
+				71962D3020B8FC3B00AB9B38 /* Main.storyboard in Resources */,
 				71FC03AD20B4289C00CC5A02 /* .gitkeep in Resources */,
+				71407EBB20B91AC000BEF431 /* Hulk.jpg in Resources */,
+				71962D3120B8FC3B00AB9B38 /* Assets.xcassets in Resources */,
+				71962D2F20B8FC3B00AB9B38 /* LaunchScreen.storyboard in Resources */,
+				71407EBE20B91AC000BEF431 /* SpiderMan.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71FC036620B41F1E00CC5A02 /* ViewController.swift in Sources */,
 				71FC039C20B4289C00CC5A02 /* CALayer+Mixed.swift in Sources */,
 				71FC03B220B4289C00CC5A02 /* NightNight.swift in Sources */,
 				71FC03A820B4289C00CC5A02 /* UIPageControl+Mixed.swift in Sources */,
@@ -276,29 +313,28 @@
 				7166686B20B53E26000AC2BE /* UIView+NightStyleTransition.swift in Sources */,
 				71FC03B420B4289C00CC5A02 /* AttributeNames.swift in Sources */,
 				71FC039E20B4289C00CC5A02 /* UIProgressView+Mixed.swift in Sources */,
+				71962D3420B8FC3B00AB9B38 /* AppDelegate.swift in Sources */,
 				71FC03AA20B4289C00CC5A02 /* UINavigationBar+Mixed.swift in Sources */,
 				71FC03A120B4289C00CC5A02 /* UIView+Mixed.swift in Sources */,
 				71FC03B520B4289C00CC5A02 /* Dictionary+AttributedStringKeys.swift in Sources */,
+				71962D3320B8FC3B00AB9B38 /* NextViewController.swift in Sources */,
 				71FC03A520B4289C00CC5A02 /* UITextField+Mixed.swift in Sources */,
 				71FC039F20B4289C00CC5A02 /* UITextView+Mixed.swift in Sources */,
 				71FC039820B4289C00CC5A02 /* UINavigationBar+MixedBarStyle.swift in Sources */,
 				71FC039920B4289C00CC5A02 /* UIImageView+Mixed.swift in Sources */,
 				71FC03A020B4289C00CC5A02 /* UIToolbar+Mixed.swift in Sources */,
 				71FC03A320B4289C00CC5A02 /* UILabel+Mixed.swift in Sources */,
-				7163205820B6C11000387D52 /* NightStyleWindow.swift in Sources */,
 				71FC03B120B4289C00CC5A02 /* UIColor+RGB.swift in Sources */,
 				71FC03A920B4289C00CC5A02 /* UITableView+Mixed.swift in Sources */,
 				71FC03AB20B4289C00CC5A02 /* UITabBar+Mixed.swift in Sources */,
-				7166686D20B54B3B000AC2BE /* NextViewController.swift in Sources */,
 				71FC03AC20B4289C00CC5A02 /* NSObject+Customize.swift in Sources */,
-				71FC036420B41F1E00CC5A02 /* AppDelegate.swift in Sources */,
 				71FC039B20B4289C00CC5A02 /* NSObject+Mixed.swift in Sources */,
+				71962D2E20B8FC3B00AB9B38 /* ViewController.swift in Sources */,
 				71FC039D20B4289C00CC5A02 /* UISwitch+Mixed.swift in Sources */,
 				71FC03A220B4289C00CC5A02 /* UIBarButtonItem+Mixed.swift in Sources */,
 				71FC03AE20B4289C00CC5A02 /* NotificationManager.swift in Sources */,
 				71FC03AF20B4289C00CC5A02 /* NNMutableAttributedString.swift in Sources */,
 				71FC039720B4289C00CC5A02 /* MixedResource.swift in Sources */,
-				7163205A20B6E63200387D52 /* TestTableView.swift in Sources */,
 				71FC03B020B4289C00CC5A02 /* UIButton+Mixed.swift in Sources */,
 				71FC03A620B4289C00CC5A02 /* UIPopoverPresentationController+Mixed.swift in Sources */,
 			);
@@ -307,20 +343,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		71FC036720B41F1E00CC5A02 /* Main.storyboard */ = {
+		71962D2620B8FC3A00AB9B38 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				71FC036820B41F1E00CC5A02 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		71FC036C20B41F2000CC5A02 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71FC036D20B41F2000CC5A02 /* Base */,
+				71962D2720B8FC3A00AB9B38 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		71962D2820B8FC3A00AB9B38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71962D2920B8FC3A00AB9B38 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -446,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62J9RVU398;
-				INFOPLIST_FILE = NightStyleTransition/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MainClass/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -465,7 +501,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62J9RVU398;
-				INFOPLIST_FILE = NightStyleTransition/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MainClass/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
